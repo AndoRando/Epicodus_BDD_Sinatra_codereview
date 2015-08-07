@@ -8,9 +8,14 @@
 
 This application accepts two strings from the user: one to be searched, and another with which to search the former for matches. The latter string may be a single word or a string of words. The app displays the number of matches found as output.
 
+HEROKU LINK - https://radiant-reef-2592.herokuapp.com/
+
 ## Setup
 
-* TBD
+* Clone this repository
+* Run $ gem install sinatra
+* Run $ ruby app.rb
+* Navigate to localhost:4567 in your web browser
 
 ## Technologies Used
 
