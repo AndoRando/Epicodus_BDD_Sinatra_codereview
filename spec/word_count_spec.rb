@@ -12,6 +12,10 @@ describe("String#word_count") do
   #end
 
   it("Searches the array and counts the instances of a given string") do
-    expect("Woodchuck, chuck, if a woodchuck could chuck wood".word_count("woodchuck")).to(eq(2))
+    expect("Woodchuck chuck if a woodchuck could chuck wood".word_count("woodchuck")).to(eq(2))
+  end
+
+  it("Tests for common non-word characters (. , ! ?)") do
+    expect("Woodchuck. chuck if a woodchuck? could woodchuck, woodchuck!".word_count("woodchuck")).to(eq(4))
   end
 end
