@@ -19,6 +19,10 @@ describe("String#word_count") do
     expect("Woodchuck. chuck if a woodchuck? could woodchuck, woodchuck!".word_count("woodchuck")).to(eq(4))
   end
 
+  it("Tests for downcasing of search word input") do
+    expect("Woodchuck. chuck if a woodchuck? could woodchuck, woodchuck!".word_count("WOoDCHuCk")).to(eq(4))
+  end
+
   it("Tests for use of numbers and non-string arguments") do
     expect("123. 1234, 123! 122. 221? 123,".word_count(123)).to(eq(3))
   end
