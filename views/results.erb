@@ -3,10 +3,21 @@
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-  <title>Word Search Results</title>
+  <title>Word Count</title>
 </head>
 <body>
-  <h1>Word Search Results</h1>
+  <h1>Word Count</h1>
   <p>Your sentence contained <%= @results %> instances of <%= @word %>.</p>
+  <form action="/results">
+    <div class="form-group">
+      <label for="sentence">What sentence would you like to search for matches?</label>
+      <input id="sentence" name="sentence" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>What word would you like to search your sentence with?</label>
+      <input id="word" name="word" type="text" class="form-control">
+    </div>
+    <button type="submit" class="btn">Search</button>
+  </form>
 </body>
 </html>

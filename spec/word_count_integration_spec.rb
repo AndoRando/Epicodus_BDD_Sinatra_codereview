@@ -3,7 +3,7 @@ require('./app.rb')
 Capybara.app = Sinatra::Application
 set(:show_exceptions, false)
 
-describe('The word search path', {:type => :feature}) do
+describe('The word count path', {:type => :feature}) do
   it('Checks that the method returns the search results (number of instances of search word) to the results page') do
     visit('/')
     fill_in('sentence', :with => 'What would a woodchuck! chuck if a woodchuck. could chuck wood?')
